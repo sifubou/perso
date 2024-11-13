@@ -19,7 +19,7 @@ BLACK = (0, 0, 0)
 
 # Initialisation de la fenêtre de jeu
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Jeu du Serpent")
+pygame.display.set_caption("Snake")
 
 # Initialiser l'horloge pour contrôler les FPS
 clock = pygame.time.Clock()
@@ -133,7 +133,7 @@ def start_screen():
     while True:
         screen.fill(BLACK)
         font = pygame.font.Font(None, 48)
-        title = font.render("Jeu du Serpent", True, WHITE)
+        title = font.render("Snake", True, WHITE)
         play_text = font.render("Appuyez sur Entrée pour jouer", True, WHITE)
         settings_text = font.render("Appuyez sur S pour les paramètres", True, WHITE)
         quit_text = font.render("Appuyez sur Q pour quitter", True, WHITE)
